@@ -908,6 +908,10 @@ footer h4 {
     margin: var(--spacing-xxl) 0;
 }
 
+.about-us-cards .section-container{
+    padding: 0;
+}
+
 .breakdown {
     margin-top: 174px;
 }
@@ -1474,7 +1478,7 @@ img[alt=about-us4]:hover {
 
 .customer-stories {
     position: relative;
-    margin: var(--spacing-xxl) var(--spacing-lg) var(--spacing-xxl) var(--spacing-lg);
+    margin: var(--spacing-xxl) var(--spacing-lg) var(--spacing-lg) 0;
 }
 
 .customer-stories .right-column {
@@ -1484,13 +1488,13 @@ img[alt=about-us4]:hover {
     text-transform: uppercase;
     font-weight: var(--font-weight-4);
     font-size: var(--h1-size);
-    padding: var(--spacing-xxl);
+    padding: var(--spacing-xl);
     box-shadow: 2px 2px 5px 1px gainsboro;
 }
 
 
 .customer-stories .right-column>p {
-    width: 71%
+    /* width: 71% */
 }
 
 .customer-stories .left-column {
@@ -2782,7 +2786,7 @@ swiper-slide img {
         position: relative;
         width: 81%;
         z-index: 3;
-        /* left: 60px; */
+        left: 1%;
         margin: auto;
         bottom: 88px;
         box-shadow: 2px 2px 5px 1px gainsboro;
@@ -2810,7 +2814,7 @@ swiper-slide img {
         position: relative;
         width: 81%;
         z-index: 3;
-        /* left: 37px; */
+        left: 1%;
         /* margin: auto; */
         bottom: 88px;
         box-shadow: 2px 2px 5px 1px gainsboro;
@@ -2836,7 +2840,7 @@ swiper-slide img {
         position: relative;
         width: 81%;
         z-index: 3;
-        /* left: 37px; */
+        left: 1%;
         /* margin: auto; */
         bottom: 88px;
         box-shadow: 2px 2px 5px 1px gainsboro;
@@ -3191,14 +3195,14 @@ swiper-slide img {
     background-color: #fff;
     position: absolute;
     z-index: 1;
-    right: -3px;
+    right: 12%;
     margin: auto;
     text-transform: uppercase;
     font-weight: var(--font-weight-4);
     font-size: var(--h1-size);
     padding: var(--spacing-xl);
     box-shadow: 2px 2px 5px 1px gainsboro;
-    width: 50%;
+    width: 48%;
 }
 
 

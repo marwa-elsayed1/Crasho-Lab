@@ -21,19 +21,6 @@ document.addEventListener('click', function (event) {
   }
 });
 
-
-// const main = document.querySelector('.background');
-// main.addEventListener('click', () => {
-
-//     document.querySelector(".ul-list").classList.remove("display");
-// })
-
-// const testCenter = document.querySelector('.test-center-background');
-// testCenter.addEventListener('click', () => {
-//     document.querySelector(".ul-list").classList.remove("display");
-// })
-
-
 // Event listener for closing the menu on outside clicks
 const ulList = document.querySelector(".ul-list");
 

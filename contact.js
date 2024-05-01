@@ -3,9 +3,9 @@ const form = document.getElementById('contact-form');
 
 
 function emailSend() {
-    fetch("https://54.87.106.26:3000/sendEmail", {
-    // fetch("http://localhost:3000/sendEmail", {
-    // fetch("https://ksa-crashlab-mailer-new-production.up.railway.app/sendEmail", {
+    fetch("https://54.226.205.131:3000/SendEmail", {
+        // fetch("http://localhost:3000/sendEmail", {
+        // fetch("https://ksa-crashlab-mailer-new-production.up.railway.app/sendEmail", {
 
 
         method: "POST",
@@ -18,11 +18,14 @@ function emailSend() {
 
         headers: {
             "Content-type": "application/json",
-        }
+        },
+        // mode: 'no-cors',
+        // headers: {
+        // 'Access-Control-Allow-Origin': '*'
+        // }
     })
         .then(response => {
             console.log(response);
-
         })
         .catch((err) => {
             console.log(err);
@@ -31,5 +34,5 @@ function emailSend() {
 }
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
+    e.preventDefault();
 });
