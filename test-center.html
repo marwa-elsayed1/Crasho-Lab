@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./images/ksa-favicon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="body">
+    <header>
+    </header>
+
+    <main>
+
+        <div id="loader-background">
+            <div id="loader" style="display: none;">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+              </div>
+        </div>
+
+
+        <div class="test-center-container">
+            <div class="section-container">
+                <nav>
+                    <div class="logo-div">
+                        <a href="index.html">
+                            <img src="./images/ksaLab-logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="ul-list">
+                        <ul class="main-navigation-bar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="active" href="test-center.html">Center</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+
+
+
+                            <div class="language-switcher">
+                                <button type="button" class="language-toggle">
+                                    <img src="./images/english.svg" id="main-flag" alt="main-flag">
+                                    <div id="language-toggle-span">English</div>
+                                    <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                </button>
+                                <ul class="language-options">
+                                    <li onclick="change_english()">
+                                        <img id="english-flag" src="./images/english.svg" alt="english-flag"
+                                            onclick="change_english()">
+                                        <a href="#" onclick="change_english()">English</a>
+                                    </li>
+                                    <li onclick="change_arabic()">
+                                        <img id="arabic-flag" src="./images/arabic.svg" alt="arabic-flag"
+                                            onclick="change_arabic()">
+                                        <a href="#">اللغة العربية</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="nav-btns-w-search">
+                        <div class="contact-w-languages">
+
+                            <a href="contact-us.html">
+                                <button type="button" name="mobile-contact-btn">Contact</button>
+                            </a>
+                        </div>
+
+                        <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                    </div>
+                </nav>
+            </div>
+
+            <div class="main-test-center">
+                <div class="test-center-background">
+                    <div class="section-container">
+                        <div>
+                            <h1 data-i18n-key="test-center-heading"><span>Shuba</span> Test Center</h1>
+                            <p data-i18n-key="test-center-description-one">Car test centers evaluate the safety,
+                                performance, and emissions of vehicles.</p>
+                        </div>
+                        <div class="first-black-card card">
+                            <p data-i18n-key="test-center-description-two">Compliant with the Euro NCAP test protocol
+                                for Lane Support Systems.</p>
+                        </div>
+                    </div>
+                    <div class="section-container">
+                        <div class="second-black-card card">
+                            <p data-i18n-key="test-center-description-three-p1">1000 meters, 5-lane highway, </p>
+                            <p data-i18n-key="test-center-description-three-p2">expandable up to 9 lanes.</p>
+                        </div>
+                        <div class="orange-card card">
+                            <p data-i18n-key="test-center-description-four">Tailored road markings, with adaptable
+                                facilities.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="overview">
+            <div class="section-container">
+                <h2 data-i18n-key="overview-heading">Overview</h2>
+                <p data-i18n-key="overview-description">Stretching over 130 hectares is a cutting-edge facility that
+                    upholds our esteemed reputation in safety testing. Just a mere 12 miles apart, this center. At the
+                    heart of these is Shuba, our state-of-the-art hub focused on the future of urban mobility. On this
+                    facility's grounds, vehicles and infrastructure undergo rigorous testing daily.</p>
+                <div class="overview-img-container">
+                </div>
+            </div>
+
+            <div class="overview-gray">
+                <div class="section-container">
+                    <div class="gray-card">
+                        <p data-i18n-key="overview-gray-description">1000 meters, 5-lane highway, expandable up to 9
+                            lanes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="breakdown">
+            <div class="section-container">
+                <h2 data-i18n-key="breakdown-heading">Facilities Breakdown</h2>
+                <div class="city-area">
+                    <h3 data-i18n-key="breakdown-subtitle">City Area</h3>
+                    <div class="breakdown-cards">
+                        <div>
+                            <p data-i18n-key="breakdown-description-one">Covering about 30 hectares and featuring 12km
+                                complete of urban roads</p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="breakdown-description-two">Equipped with boulevards, intersections,
+                                roundabouts, parking spaces, and more
+                            </p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="breakdown-description-three">True-to-life cityscape, complete with 40
+                                buildings, for real-world connectivity testing
+                            </p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="breakdown-description-four">Modular zones, road equipment, varied driving
+                                surfaces, and an array of adjustable facilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-area">
+                    <h3 data-i18n-key="breakdown-subtitle">Highway</h3>
+                    <div class="breakdown-cards highway">
+                        <div>
+                            <p data-i18n-key="breakdown-description-one">1000 meters, 5-lane highway, expandable up to 9
+                                lanes. </p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="breakdown-description-two">Compliant with the Euro NCAP test protocol for
+                                Lane Support Systems. 
+                            </p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="breakdown-description-three" class="highway-three">Tailored road markings,
+                                with adaptable facilities. 
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roads">
+            <div class="section-container">
+                <div class="two-columns">
+                    <div class="left-column">
+                        <h3 data-i18n-key="roads-heading">Rural Roads</h3>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+                            <p data-i18n-key="roads-description-one">2.9 km length with two lanes.</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+                            <p data-i18n-key="roads-description-two">Featuring broad curves, two significant traffic
+                                circles, and handling platforms.</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="roads-description-three">Styled after French and German secondary roads.
+                            </p>
+                        </div>
+
+                        <h3 data-i18n-key="crash-test-heading">Crash Tests</h3>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="crash-test-description-one">Three distinct crash-test areas.</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="crash-test-description-two">Features include rockfall embankments,
+                                high-tech cameras, customer-specific cottages, and drones.</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="crash-test-description-three">Customizable to varied crash test standards
+                                and surface requirements.</p>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <img src="./images/new-center-car.png" alt="test-car">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="amenities">
+            <div class="section-container">
+                <h2 data-i18n-key="amenities-heading">Advanced Amenities</h2>
+                <div class="two-columns">
+                    <div class="left-column">
+                        <img src="./images/new-aminity.png" alt="amenities-car">
+                    </div>
+                    <div class="right-column">
+                        <h3 data-i18n-key="amenities-subtitle-one">Exclusive for clients</h3>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="amenities-description-one">Workshops, meeting spaces, storage areas, and a
+                                viewing platform.</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="amenities-description-two">Comprehensive security:</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="amenities-description-three">Risk assessments, safety briefings, and a
+                                secure environment ensured by over 30 CCTV cameras
+                                and controlled access points.</p>
+                        </div>
+
+
+                        <h3 data-i18n-key="amenities-subtitle-two">Connectivities</h3>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+                            <p data-i18n-key="amenities-description-four">A robust mesh optical network,
+                                state-of-the-art connection terminals, and 70 fiber optical
+                                cabinets.</p>
+                        </div>
+                        <div class="orangy-bullet">
+                            <div class="bullet"></div>
+
+                            <p data-i18n-key="amenities-description-five">In the lead since 2018 for 5G technology
+                                implementation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="amenities-cards">
+                    <h3 data-i18n-key="amenities-cards-heading">Innovative Technologies</h3>
+                    <div class="amenities-cards-divs">
+                        <div>
+                            <p data-i18n-key="amenities-cards-description-one">V2X</p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="amenities-cards-description-two">DSRC: ITS-G5 / LTE</p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="amenities-cards-description-three">Bluetooth / Wifi</p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="amenities-cards-description-four">Ble</p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="amenities-cards-description-five">ZigBee</p>
+                        </div>
+                        <div>
+                            <p data-i18n-key="amenities-cards-description-six">IoT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="innovative-cards">
+            <div class="section-container">
+                <div class="two-columns">
+                    <div class="left-column">
+                        <p data-i18n-key="innovative-cards-heading-one">At Shuba, we don't just test for today; we
+                            envision and prepare for the mobility of tomorrow. Join us in paving the way for a safer
+                            future on the roads.</p>
+                        <p data-i18n-key="innovative-cards-heading-two">For a deeper dive into Shuba's capacities and
+                            technologies, please reach out to our dedicated team.</p>
+                        <p class="mini-orange-subtitle" data-i18n-key="innovative-cards-author">- KSA Crash Lab Team</p>
+                    </div>
+                    <div class="right-column">
+                        <img src="./images/new-aminity2.png" alt="innovative-car">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="first">
+                <img src="./images/ksaLab-logo.png" alt="brand-logo" loading="lazy">
+            </div>
+            <div class="second">
+                <h5 data-i18n-key="footer-heading-one">Navigation</h5>
+                <a href="index.html">
+                    <p data-i18n-key="footer-description-one">Home</p>
+                </a>
+                <a href="test-center.html">
+                    <p data-i18n-key="footer-description-two">Center</p>
+                </a>
+                <a href="about-us.html">
+                    <p data-i18n-key="footer-description-three">About</p>
+                </a>
+                <a href="blog.html">
+                    <p data-i18n-key="footer-description-four">Blog</p>
+                </a>
+                <a href="contact-us.html">
+                    <p data-i18n-key="footer-description-five">Contact</p>
+                </a>
+            </div>
+
+            <div class="map-footer-container third">
+                <h5 data-i18n-key="footer-heading-two">Maps Location</h5>
+                <div class="responsive-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922967.4531044518!2d37.681910031795695!3d25.359864969593236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bb09a54f5cb5c3%3A0x714ec79fcada102e!2sAl%20Ais%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1710063466688!5m2!1sen!2seg"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <h5 data-i18n-key="footer-heading-three">Follow Us</h5>
+                <div class="follow-icons">
+                    <img src="./images/facebook-icon.png" alt="facebook" loading="lazy">
+                    <img src="./images/twitter-icon.png" alt="twitter" loading="lazy">
+                    <img src="./images/linkedin-icon.png" alt="linkedin" loading="lazy">
+                    <img src="./images/insta-icon.png" alt="insta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tab">
+            <p data-i18n-key="footer-copyrights">© 2024 All rights reserved <span class="tab-span">|</span> Designed and
+                developed by Spatium Software</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="lang.js"></script>
+</body>
+
+</html>

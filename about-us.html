@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./images/ksa-favicon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body">
+    <header>
+
+    </header>
+
+    <main>
+        <div id="loader-background">
+            <div id="loader" style="display: none;">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+              </div>
+        </div>
+        <div class="about-container">
+            <div class="section-container about-container-navbar">
+                <nav>
+                    <div class="logo-div">
+                        <a href="index.html">
+                            <img src="./images/ksaLab-logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="ul-list">
+                        <ul class="main-navigation-bar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="test-center.html">Center</a></li>
+                            <li><a class="active" href="about-us.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+
+
+
+                            <div class="language-switcher">
+                                <button type="button" class="language-toggle">
+                                  <img src="./images/english.svg" id="main-flag" alt="main-flag">
+                                  <div id="language-toggle-span">English</div>
+                                  <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                </button>
+                                <ul class="language-options">
+                                  <li onclick="change_english()">
+                                    <img id="english-flag" src="./images/english.svg" alt="english-flag" onclick="change_english()">
+                                    <a href="#" onclick="change_english()">English</a>
+                                </li>
+                                  <li onclick="change_arabic()">
+                                    <img id="arabic-flag" src="./images/arabic.svg" alt="arabic-flag" onclick="change_arabic()">
+                                    <a href="#" onclick="change_arabic()">اللغة العربية</a>
+                                </li>
+                                </ul>
+                              </div>
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="nav-btns-w-search">
+                        <div class="contact-w-languages">
+
+                            <a href="contact-us.html">
+                                <button type="button" name="mobile-contact-btn">Contact</button>
+                            </a>
+                        </div>
+
+                        <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                    </div>
+                </nav>
+            </div>
+            <div class="about-legacy-background">
+                <div class="two-columns">
+                    <div class="section-container">
+                        <div class="left-column">
+                            <h3 class="mini-orange-subtitle" data-i18n-key="about-legacy-subtitle">our legacy</h3>
+                            <h1 class="dedication-heading" data-i18n-key="about-legacy-heading">Dedication to <span>road</span> safety</h1>
+                            <p data-i18n-key="about-legacy-description">In the realm of road safety, KSA Crash Lab has emerged as a beacon of trust and reliability. Over the past three decades, we've been dedicated to pushing the boundaries of safety, constantly striving for excellence in our tests, analyses, and simulations. Our commitment to safeguarding lives has paved the way for countless innovations, positioning us at the forefront of the industry.</p>
+                        </div>
+                        <div class="legacy-cards">
+                            <div>
+                                <img src="./images/legacy3.png" alt="legacy-card1">
+                            </div>
+                            <div>
+                                <img src="./images/legacy2.png" alt="legacy-card2">
+                            </div>
+                            <div>
+                                <img src="./images/legacy1.png" alt="legacy-card3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mission">
+            <div class="section-container">
+                <div class="two-columns">
+
+                    <div class="right-column">
+                        <h2 data-i18n-key="mission-heading">Our Mission</h2>
+                        <p data-i18n-key="mission-description">At KSA Crash Lab, our mission is to ensure the highest standards of road safety through rigorous testing and in-depth analysis. We believe in a world where every journey, regardless of its distance or mode, is synonymous with safety. Our tests aim not just to meet but exceed international standards, ensuring that every product and service we validate is robust and reliable.</p>
+                    </div>
+                    <div class="left-column">
+                        <img src="./images/colored1.png" alt="mission1">
+                        <img src="./images/new-mission2.png" alt="mission2">
+                        <img src="./images/new-mission1.png" alt="mission3">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="our-facilities">
+            <div class="section-container">
+                <div class="our-facilities-boy">
+
+                 
+                    <div class="boy-img">
+                    </div>
+
+                    <div class="boy-desc">
+                        <h2 data-i18n-key="our-facilities-heading">Our Facilities</h2>
+                        <p data-i18n-key="our-facilities-description">Hidden away from public view, our grounds are a testament to our commitment to privacy and security. With nearly 30 CCTV cameras in operation and state-of-the-art infrastructures, we offer an environment that's both high-tech and secure. Our facilities are fully connected and equipped to handle a wide variety of tests – from different types of vehicles to road equipment of all weights and speeds.</p>
+                    </div>        
+                </div>
+            </div>
+        </div>
+
+        <div class="innovation-corere">
+            <div class="section-container">
+                <div class="innovation-details">
+                    <div>
+                        <h3 data-i18n-key="innovation--heading">Innovation At Our Core</h3>
+                    </div>
+                    <div>
+                        <img src="./images/new-inno-car.svg" alt="inno-people">
+                    </div>
+                    <div>
+                        <h3 data-i18n-key="trust--heading" class="bottom-innovation-heading">Trust and Recognition </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="innovation-description-containerr">
+            <div class="desc-onee">
+                <p data-i18n-key="innovation-description-containerr-one">At KSA Crash Lab, we are proud pioneers. Not just content with traditional methods, we’ve embraced the synergy between virtual and real crash testing. Using advanced simulation tools that meet the stringent requirements of the EN163030/TR163030 standards, we bring a level of precision and detail that sets us apart. </p>
+            </div>
+            <div class="desc-two">
+                <p data-i18n-key="innovation-description-containerr-two">International accolades and recognitions are a testament to our expertise, but our true accomplishment lies in the trust our clients place in us. Every test we conduct, every simulation we run, is grounded in our commitment to safety and trust. With our risk analyses, safety briefings, and personalized support, we have built relationships that stand the test of time. </p>
+            </div>
+        </div>
+
+
+        <div class="journeyy">
+            <div class="section-container">
+                <h2 data-i18n-key="journey-heading">Join Us On Our Journey</h2>
+                <p data-i18n-key="journey-description-one">We invite you to explore our services, understand our processes, and see why KSA Crash Lab has been the go-to name for top-level expertise and services in road safety. Together, let's make the roads safer for everyone. </p>
+                <p data-i18n-key="journey-description-two" class="journey-description-two">For more details on our services, standards, and accreditations, please visit the respective sections on our homepage or get in touch with our dedicated team.</p>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="first">
+                <img src="./images/ksaLab-logo.png" alt="brand-logo" loading="lazy">
+            </div>
+            <div class="second">
+                <h5 data-i18n-key="footer-heading-one">Navigation</h5>
+                <a href="index.html">
+                    <p data-i18n-key="footer-description-one">Home</p>
+                </a>
+                <a href="test-center.html">
+                    <p data-i18n-key="footer-description-two">Center</p>
+                </a>
+                <a href="about-us.html">
+                    <p data-i18n-key="footer-description-three">About</p>
+                </a>
+                <a href="blog.html">
+                    <p data-i18n-key="footer-description-four">Blog</p>
+                </a>
+                <a href="contact-us.html">
+                    <p data-i18n-key="footer-description-five">Contact</p>
+                </a>
+            </div>
+
+            <div class="map-footer-container third">
+                <h5 data-i18n-key="footer-heading-two">Maps Location</h5>
+                <div class="responsive-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922967.4531044518!2d37.681910031795695!3d25.359864969593236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bb09a54f5cb5c3%3A0x714ec79fcada102e!2sAl%20Ais%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1710063466688!5m2!1sen!2seg"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <h5 data-i18n-key="footer-heading-three">Follow Us</h5>
+                <div class="follow-icons">
+                    <img src="./images/facebook-icon.png" alt="facebook" loading="lazy">
+                    <img src="./images/twitter-icon.png" alt="twitter" loading="lazy">
+                    <img src="./images/linkedin-icon.png" alt="linkedin" loading="lazy">
+                    <img src="./images/insta-icon.png" alt="insta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tab">
+            <p data-i18n-key="footer-copyrights">© 2024 All rights reserved <span class="tab-span">|</span> Designed and
+                developed by Spatium Software</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="lang.js"></script>
+   
+</body>
+
+</html>

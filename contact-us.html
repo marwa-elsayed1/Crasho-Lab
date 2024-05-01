@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./images/ksa-favicon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="body">
+    <header>
+
+    </header>
+
+    <main>
+        <div id="loader-background">
+            <div id="loader" style="display: none;">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+              </div>
+        </div>
+        <div class="contact-container">
+            <div class="section-container">
+                <nav>
+                    <div class="logo-div">
+                        <a href="index.html">
+                            <img src="./images/ksaLab-logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="ul-list">
+                        <ul class="main-navigation-bar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="active" href="test-center.html">Center</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+
+
+
+                            <div class="language-switcher">
+                                <button type="button" class="language-toggle">
+                                    <img src="./images/english.svg" id="main-flag" alt="main-flag">
+                                    <div id="language-toggle-span">English</div>
+                                    <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                </button>
+                                <ul class="language-options">
+                                    <li onclick="change_english()">
+                                        <img id="english-flag" src="./images/english.svg" alt="english-flag"
+                                            onclick="change_english()">
+                                        <a href="#" onclick="change_english()">English</a>
+                                    </li>
+                                    <li onclick="change_arabic()">
+                                        <img id="arabic-flag" src="./images/arabic.svg" alt="arabic-flag"
+                                            onclick="change_arabic()">
+                                        <a href="#">اللغة العربية</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="nav-btns-w-search">
+                        <div class="contact-w-languages">
+
+                            <a href="contact-us.html">
+                                <button type="button" name="mobile-contact-btn">Contact</button>
+                            </a>
+                        </div>
+
+                        <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                    </div>
+                </nav>
+            </div>
+
+            <div class="contact-background">
+                <div class="section-container">
+                    <div class="form-container">
+                        <div class="contact-black">
+                            <div>
+                                <h1 data-i18n-key="contact-heading"><span>Reach out</span> to the Future of Mobility
+                                </h1>
+                                <p data-i18n-key="contact-description">Your insights, questions, and feedback propel us
+                                    forward. Whether you're interested in our services, seeking partnership
+                                    opportunities, or simply have a query about the future of mobility, we're here to
+                                    connect with you.</p>
+                            </div>
+                            <div class="contact-form-container" id="formDiv">
+                                <div class="contact-form">
+                                    <h3 data-i18n-key="contact-form-heading">Write to Us</h3>
+                                    <form method="POST" id="contact-form" onsubmit="emailSend()">
+                                        <label data-i18n-key="contact-form-name-label">Name *</label>
+                                        <input type="text" id="username" name="user_name" placeholder="Full Name"
+                                            required>
+
+                                        <label data-i18n-key="contact-form-email-label">Email *</label>
+                                        <input type="email" id="useremail" name="user_email"
+                                            placeholder="ex. crashtest@exmaple.com" required>
+
+                                        <label data-i18n-key="contact-form-subject-label">Subject *</label>
+                                        <input type="text" id="usersub" name="user_subject" placeholder="Subject"
+                                            required>
+
+                                        <label data-i18n-key="contact-form-msg-label">Message *</label>
+                                        <textarea name="message" id="usermsg" rows="6"
+                                            placeholder="Write Something Here" required></textarea>
+
+                                        <p id="contact-message"></p>
+                                        <button data-i18n-key="contact-form-submit-btn" type="submit" class="submit-btn"
+                                            onclick="showDiv('opacity-welcome')">submit</button>
+                                    </form>
+
+                                    <div class="opacity-welcome" style="display: none;" id="opacity-welcome">
+                                        <div id="welcomeDiv" class="answer_list">
+                                            <h3 data-i18n-key="contact-form-success-msg">Success</h3>
+                                            <p id="welcoming-text" data-i18n-key="contact-form-congrats-msg">
+                                                Congratulations</p>
+                                            <button type="text" name="ok-btn" class="ok-btn"
+                                                onclick="hideDiv('opacity-welcome')"
+                                                data-i18n-key="contact-form-ok-btn">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="contact-img"></div>
+
+
+        <div class="contact-details">
+            <div class="section-container">
+                <div class="two-columns">
+                    <div class="left-column">
+                        <h4 data-i18n-key="contact-details-heading-one">Contact Details</h4>
+                        <p data-i18n-key="contact-details-email">Email: info@ksacrashlab.com </p>
+                        <p data-i18n-key="contact-details-phone">Phone: 00966590177041</p>
+                    </div>
+                    <div class="right-column">
+                        <h4 data-i18n-key="contact-details-heading-two">Business Hours</h4>
+                        <p data-i18n-key="contact-date-info-one">Sunday - Thursday: 8:00 AM - 6:00 PM </p>
+                        <p data-i18n-key="contact-date-info-two">Saturday: 9:00 AM - 3:00 PM</p>
+                        <p data-i18n-key="contact-closing-date">Closed on Fridays and Public Holidays.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-center">
+            <div class="section-container">
+                <div class="two-columns">
+                    <div class="left-column">
+                    </div>
+
+                    <div class="right-column">
+                        <div>
+                            <h3 data-i18n-key="contact-center-heading">Visit Our Center</h3>
+                            <p data-i18n-key="contact-center-description" class="contact-center-description">While we appreciate digital communication,
+                                nothing compares to an in-person meeting. Arrange a visit to our KSA Crash Lab and
+                                experience the future of mobility firsthand. (Note: Visits by appointment only.) </p>
+                        </div>
+                        <div>
+                            <h3 data-i18n-key="follow-us-heading">Follow Us</h3>
+                            <p data-i18n-key="follow-us-description">Connect with KSA Crash Lab on social media for news
+                                updates, behind-the-scenes glimpses, and industry insights. </p>
+                            <ul>
+                                <li data-i18n-key="follow-us-facebook">Facebook: @Ksacrashlab</li>
+                                <li data-i18n-key="follow-us-twitter">Twitter: @Ksacrashlab</li>
+                                <li data-i18n-key="follow-us-linkedin">Linkedin: @Ksacrashlab</li>
+                                <li data-i18n-key="follow-us-instagram">Instagram: @Ksacrashlab</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p data-i18n-key="contact-center-thanks">Thank you for your interest in KSA Crash Lab. Our
+                                team looks forward to assisting
+                                you on your journey toward safer, more efficient mobility. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="first">
+                <img src="./images/ksaLab-logo.png" alt="brand-logo" loading="lazy">
+            </div>
+            <div class="second">
+                <h5 data-i18n-key="footer-heading-one">Navigation</h5>
+                <a href="index.html">
+                    <p data-i18n-key="footer-description-one">Home</p>
+                </a>
+                <a href="test-center.html">
+                    <p data-i18n-key="footer-description-two">Center</p>
+                </a>
+                <a href="about-us.html">
+                    <p data-i18n-key="footer-description-three">About</p>
+                </a>
+                <a href="blog.html">
+                    <p data-i18n-key="footer-description-four">Blog</p>
+                </a>
+                <a href="contact-us.html">
+                    <p data-i18n-key="footer-description-five">Contact</p>
+                </a>
+            </div>
+
+            <div class="map-footer-container third">
+                <h5 data-i18n-key="footer-heading-two">Maps Location</h5>
+                <div class="responsive-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922967.4531044518!2d37.681910031795695!3d25.359864969593236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bb09a54f5cb5c3%3A0x714ec79fcada102e!2sAl%20Ais%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1710063466688!5m2!1sen!2seg"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <h5 data-i18n-key="footer-heading-three">Follow Us</h5>
+                <div class="follow-icons">
+                    <img src="./images/facebook-icon.png" alt="facebook" loading="lazy">
+                    <img src="./images/twitter-icon.png" alt="twitter" loading="lazy">
+                    <img src="./images/linkedin-icon.png" alt="linkedin" loading="lazy">
+                    <img src="./images/insta-icon.png" alt="insta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tab">
+            <p data-i18n-key="footer-copyrights">© 2024 All rights reserved <span class="tab-span">|</span> Designed and
+                developed by Spatium Software</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script> -->
+    <script src="index.js"></script>
+    <script src="contact.js"></script>
+    <script src="lang.js"></script>
+  
+    
+
+</body>
+
+</html>

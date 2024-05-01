@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./images/ksa-favicon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body id="body">
+    <header>
+
+    </header>
+
+    <main>
+        <div id="loader-background">
+            <div id="loader" style="display: none;">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+              </div>
+        </div>
+        <div class="main-container">
+            <div class="blog-container">
+                <div class="section-container">
+                    <nav>
+                        <div class="logo-div">
+                            <a href="index.html">
+                                <img src="./images/ksaLab-logo.svg" alt="logo">
+                            </a>
+                        </div>
+    
+                        <div class="ul-list">
+                            <ul class="main-navigation-bar">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="test-center.html">Center</a></li>
+                                <li><a href="about-us.html">About</a></li>
+                                <li><a  class="active" href="blog.html">Blog</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+    
+    
+    
+                                <div class="language-switcher">
+                                    <button type="button" class="language-toggle">
+                                      <img src="./images/english.svg" id="main-flag" alt="main-flag">
+                                      <div id="language-toggle-span">English</div>
+                                      <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                    </button>
+                                    <ul class="language-options">
+                                      <li onclick="change_english()">
+                                        <img id="english-flag" src="./images/english.svg" alt="english-flag" onclick="change_english()">
+                                        <a href="#" onclick="change_english()">English</a>
+                                    </li>
+                                      <li onclick="change_arabic()">
+                                        <img id="arabic-flag" src="./images/arabic.svg" alt="arabic-flag" onclick="change_arabic()">
+                                        <a href="#" onclick="change_arabic()">اللغة العربية</a>
+                                    </li>
+                                    </ul>
+                                  </div>
+    
+                            </ul>
+    
+                        </div>
+    
+    
+    
+                        <div class="nav-btns-w-search">
+                            <div class="contact-w-languages">
+                               
+                                <a href="contact-us.html">
+                                    <button type="button" name="mobile-contact-btn">Contact</button>
+                                </a>
+                                                        </div>
+    
+                            <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                        </div>
+                    </nav>
+                </div>
+                <div class="blog-background">
+                    <div class="section-container">
+                        <div>
+                            <h2 class="mini-orange-subtitle" data-i18n-key="blog-subtitle">KSA Crash Lab insights Blog</h2>
+                            <h1 data-i18n-key="blog-heading">Delving Deeper <span>into the Future</span> of Mobility</h1>
+                            <p data-i18n-key="blog-description"> Welcome to KSA Crash Lab's Insights Blog - your primary source for the latest trends, innovations, and breakthroughs in vehicle safety and urban mobility. From deep dives into our state-of-the-art testing facilities to thought leadership on tomorrow's transportation landscape, we pave the path to understanding. Journey with us as we navigate the ever-evolving roads of the mobility sector. </p>
+                            <div class="circle-blog-options">
+                                <div>
+                                    <div class="circular-div">
+                                        <img src="./images/searchy.png" alt="circle-blog1">
+                                    </div>
+                                    <p data-i18n-key="circle-blog-option-one">Discover</p>
+                                </div>
+                                <div>
+                                    <div class="circular-div">
+                                        <img src="./images/brain-circuit.png" alt="circle-blog2">
+                                    </div>
+                                    <p data-i18n-key="circle-blog-option-two">Understand</p>
+                                </div>
+                                <div>
+                                    <div class="circular-div">
+                                        <img src="./images/practice.png" alt="circle-blog3">
+                                    </div>
+                                    <p data-i18n-key="circle-blog-option-three">Innovate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="blogs-page-container" class="blogs-articles-container">
+            <div class="blogs">
+                <div class="section-container" id="targeted-blog">
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog1.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client-2.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-one">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-one">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-one">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog2.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-two">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-two">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-two">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>                  
+                        </a>
+                      
+                    </div>
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog1.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client-2.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-three">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-three">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-three">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="section-container">
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog2.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-four">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-four">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-four">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog1.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client-2.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-five">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-five">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-five">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                      
+                    </div>
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog2.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-six">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-six">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-six">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="section-container">
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog1.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client-2.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-seven">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-seven">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-seven">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="blog-article.html#blogy">
+                            <img src="./images/blog2.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author-eight">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position-eight">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-eight">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                      
+                    </div>
+                    <div>
+                        <a href="blog-article.html#blogy#blogy">
+                            <img src="./images/blog1.png" alt="blog1">
+                        </a>
+                        <a href="blog-article.html#blogy">
+                            <div class="client-details">
+                                <div class="client-info">
+                                    <div>
+                                        <img src="./images/client-2.svg" alt="client">
+                                    </div>
+                                    <div>
+                                        <h4 data-i18n-key="client-info-author">Leonardo Di Caprio</h4>
+                                        <h5 data-i18n-key="client-info-position">Actor / Director</h5>
+                                    </div>
+                                </div>
+                                <p data-i18n-key="client-info-description-nine">Car crash testing is an essential part of ensuring the safety of vehicles and their occupants. By understanding car crash test ratings and results, consumers can make informed decisions about which vehicles are the safest for their needs.</p>
+                            </div>
+                        </a>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="blog-articles">
+            <div class="section-container">
+                <div class="pages-w-arrows">
+                    <div>
+                        <img src="./images/left.svg" class="blog-left-arrow" alt="left-arrow">
+                    </div>
+                    <div class="pages">
+                        <a href="blog.html#targeted-blog">
+                            <p data-i18n-key="page-one">1</p>
+                        </a>
+                        <a href="blog.html#targeted-blog">
+                            <p data-i18n-key="page-two">2</p>
+                        </a>
+                        <a href="blog.html#targeted-blog">
+                            <p data-i18n-key="page-three">3</p>
+                        </a>
+                        <a href="blog.html#targeted-blog">
+                            <p data-i18n-key="page-four">4</p>
+                        </a>
+                        <a href="blog.html#targeted-blog">
+                            <p data-i18n-key="page-five">5</p>
+                        </a>
+                        <a href="blog.html#targeted-blog">
+                            <p>...</p>
+                        </a>
+                        <a href="blog.html#targeted-blog">
+                            <p data-i18n-key="page-thirteen">13</p>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="./images/right.svg" class="blog-right-arrow" alt="right-arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="first">
+                <img src="./images/ksaLab-logo.png" alt="brand-logo" loading="lazy">
+            </div>
+            <div class="second">
+                <h5 data-i18n-key="footer-heading-one">Navigation</h5>
+                <a href="index.html">
+                    <p data-i18n-key="footer-description-one">Home</p>
+                </a>
+                <a href="test-center.html">
+                    <p data-i18n-key="footer-description-two">Center</p>
+                </a>
+                <a href="about-us.html">
+                    <p data-i18n-key="footer-description-three">About</p>
+                </a>
+                <a href="blog.html">
+                    <p data-i18n-key="footer-description-four">Blog</p>
+                </a>
+                <a href="contact-us.html">
+                    <p data-i18n-key="footer-description-five">Contact</p>
+                </a>
+            </div>
+
+            <div class="map-footer-container third">
+                <h5 data-i18n-key="footer-heading-two">Maps Location</h5>
+                <div class="responsive-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922967.4531044518!2d37.681910031795695!3d25.359864969593236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bb09a54f5cb5c3%3A0x714ec79fcada102e!2sAl%20Ais%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1710063466688!5m2!1sen!2seg"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <h5 data-i18n-key="footer-heading-three">Follow Us</h5>
+                <div class="follow-icons">
+                    <img src="./images/facebook-icon.png" alt="facebook" loading="lazy">
+                    <img src="./images/twitter-icon.png" alt="twitter" loading="lazy">
+                    <img src="./images/linkedin-icon.png" alt="linkedin" loading="lazy">
+                    <img src="./images/insta-icon.png" alt="insta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tab">
+            <p data-i18n-key="footer-copyrights">© 2024 All rights reserved <span class="tab-span">|</span> Designed and
+                developed by Spatium Software</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="lang.js"></script>
+
+</body>
+
+</html>

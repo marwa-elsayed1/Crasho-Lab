@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSA Crash Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./images/ksa-favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body id="body">
+    <header>
+
+    </header>
+
+    <main>
+
+        <div id="loader-background">
+            <div id="loader" style="display: none;">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+
+
+        <div class="background-container">
+            <div class="section-container">
+                <nav class="mobile-nav">
+                    <div class="logo-div">
+
+                        <img src="./images/ksaLab-logo.png" alt="logo">
+                    </div>
+
+
+                    <div class="ul-list">
+                        <ul class="main-navigation-bar">
+                            <li><a class="active" href="index.html" data-i18n-key="home">Home</a></li>
+                            <li><a href="test-center.html" data-i18n-key="center">Center</a></li>
+                            <li><a href="about-us.html" data-i18n-key="about">About</a></li>
+                            <li><a href="blog.html" data-i18n-key="blog">Blog</a></li>
+                            <li><a href="contact-us.html" data-i18n-key="contact-us">Contact Us</a></li>
+
+                            <div class="language-switcher">
+                                <button type="button" class="language-toggle">
+                                    <img src="./images/english.svg" id="main-flag" alt="main-flag">
+                                    <div id="language-toggle-span" data-i18n-key="english">English</div>
+                                    <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                </button>
+                                <ul class="language-options">
+                                    <li onclick="change_english()">
+                                        <img id="english-flag" src="./images/english.svg" alt="english-flag"
+                                            onclick="change_english()">
+                                        <a href="#" onclick="change_english()" data-i18n-key="english">English</a>
+                                    </li>
+                                    <li onclick="change_arabic()">
+                                        <img id="arabic-flag" src="./images/arabic.svg" alt="arabic-flag"
+                                            onclick="change_arabic()">
+                                        <a href="#" onclick="change_arabic()" data-i18n-key="arabic">اللغة العربية</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="nav-btns-w-search">
+                        <div class="contact-w-languages">
+
+                            <a href="contact-us.html">
+                                <button type="button" name="mobile-contact-btn" data-i18n-key="contact">Contact</button>
+                            </a>
+                        </div>
+
+                        <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                    </div>
+                </nav>
+            </div>
+            <div class="background">
+                <h1 class="mini-orange-subtitle" data-i18n-key="infrastructure-heading-p1"><span>Infrastructure</span>
+                    Testing</h1>
+                <p data-i18n-key="infrastructure-description-p1">KSA Crash Lab carries out crash tests on road safety
+                    equipment in virtual and real conditions, doing so in keeping with national and international
+                    standards. </p>
+                <h1 data-i18n-key="infrastructure-heading-p2">KSA <span>CRASH LAB</span></h1>
+            </div>
+        </div>
+
+        <div class="accreditiations">
+            <div class="section-container">
+                <div class="two-columns">
+
+                    <div class="left-column">
+                        <div class="mini-heading-div">
+                            <div class="orange-border"></div>
+                            <h4 class="mini-heading" data-i18n-key="accreditiations-subtitle">ACCREDINTIONS</h4>
+                        </div>
+                        <h2 class="big-heading" data-i18n-key="accreditiations-heading">KSA Crash Lab is an accredited
+                            center</h2>
+                        <div class="oranged-border-w-paragraph">
+                            <img src="./images/check.png" alt="correct-orange" loading="lazy">
+                            <p class="subtitle" data-i18n-key="accreditiations-option1">Test laboratory accredited by
+                                the COFRAC</p>
+                        </div>
+                        <div class="oranged-border-w-paragraph">
+                            <img src="./images/check.png" alt="correct-orange" loading="lazy">
+                            <p class="subtitle" data-i18n-key="accreditiations-option2">ISO/CEI 17025 Quality accredited
+                                center</p>
+                        </div>
+                        <div class="oranged-border-w-paragraph">
+                            <img src="./images/check.png" alt="correct-orange" loading="lazy">
+                            <p class="subtitle" data-i18n-key="accreditiations-option3">Accredited to AASHTO MASH
+                                standards (USA)</p>
+                        </div>
+                    </div>
+                    <div id="scaled-img" class="right-column">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="standards">
+            <div class="section-container">
+                <div class="mini-heading-div">
+                    <div class="orange-border"></div>
+                    <h3 class="mini-heading" data-i18n-key="standards-subtitle">Standards</h3>
+                </div>
+                <h2 class="big-heading" data-i18n-key="standards-heading">Compilance With Standards</h2>
+                <p class="subtitle" data-i18n-key="standards-description-p1">KSA Crash Lab is an active member of the
+                    CEN (European Committee for Standardization) working group, with the mission to constantly develop
+                    and evolve CE standards.</p>
+                <p class="subtitle" data-i18n-key="standards-description-p2">Our services include a range of tests to
+                    check for compliance with the applicable standards. From installation to crash testing, we support
+                    our customers during the entire process to ensure best results.</p>
+            </div>
+        </div>
+
+        <div class="comp-car-wrapper">
+            <div class="section-container">
+                <div class="comp-car-frame">
+                    <div class="section-container">
+                        <img src="./images/compilance-car.png" alt="comp-car">
+                    </div>
+                </div>
+
+                <div class="comp-car-description">
+                    <div class="section-container">
+                        <p data-i18n-key="crashed-frame-text">Crashed vehicles from 900 kg to 38 tons</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tests-w-standards">
+            <div class="section-container">
+                <div class="mini-heading-div">
+                    <div class="orange-border"></div>
+                    <h3 class="mini-heading" data-i18n-key="standards-gallery-subtitle">Standards</h3>
+                </div>
+                <h2 class="big-heading" data-i18n-key="standards-gallery-heading">Tests With Standards</h2>
+            </div>
+        </div>
+
+
+        <div class="slideshow-container-mobile">
+            <img src="./images/colored1.png" alt="slideshow-img-one">
+            <img src="./images/colored2.png" alt="slideshow-img-two">
+            <img src="./images/colored3.png" alt="slideshow-img-three">
+
+        </div>
+
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="section-container">
+                    <div class="slideshow-images">
+                        <div class="shrinked-img" id="first-shrinked"></div>
+                        <div class="shrinked-img" id="second-shrinked"></div>
+                        <div class="shrinked-img" id="third-shrinked"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="section-container">
+                    <div class="slideshow-images">
+                        <div class="new-service" id="first-new-service"></div>
+                        <div class="new-service" id="second-new-service"></div>
+                        <div class="new-service" id="third-new-service"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="section-container">
+                    <div class="slideshow-images">
+                        <div class="newer-service" id="first-newer-service"></div>
+                        <div class="newer-service" id="second-newer-service"></div>
+                        <div class="newer-service" id="third-newer-service"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Next and previous buttons -->
+
+        </div>
+
+
+        <!-- <div class="section-container">
+            <div class="numbertext">1 / 3</div>
+        </div> -->
+
+        <div class="plus-slides">
+            <div class="section-container">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="customized-services">
+            <div class="section-container">
+                <div class="main-customs">
+                    <div class="customized-desc">
+                        <div class="mini-heading-div">
+                            <div class="orange-border"></div>
+                            <h3 class="mini-heading" data-i18n-key="customized-services-subtitle">Customized Services
+                            </h3>
+                        </div>
+                        <h1 class="big-heading" data-i18n-key="customized-services-heading">Broad Range Of Services</h1>
+                        <p data-i18n-key="customized-services-description">A multitude of customised services on all
+                            types of surfaces to meet customers requirements</p>
+
+                    </div>
+                </div>
+                <div class="customs">
+
+                    <div class="customs-unique">
+                        <div class="inner-service single-card-service">
+                            <p class="positioned-one" data-i18n-key="customized-service-one">Individual crash tests - no
+                                standards aim</p>
+                        </div>
+                    </div>
+                    <div class="customs-left">
+                        <div>
+                            <div class="inner-service custom-one">
+                                <p class="positioned-two" data-i18n-key="customized-service-two">Push/Pull Tests</p>
+                            </div>
+                            <div class="double">
+
+                                <div class="inner-service custom-two">
+                                    <p class="positioned-three" data-i18n-key="customized-service-three">Biomechanics -
+                                        Humanbody simulation</p>
+                                </div>
+
+                            </div>
+
+                            <div class="inner-service custom-three">
+                                <p class="positioned-four" data-i18n-key="customized-service-four">Modular concrete soil
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customs-right">
+                        <div class="inner-service custom-four">
+                            <p class="positioned-five" data-i18n-key="customized-service-five">Grip tests</p>
+                        </div>
+                        <div class="inner-service custom-five">
+                            <p class="positioned-six" data-i18n-key="customized-service-six">3D simulation for other
+                                atypical situations</p>
+                        </div>
+                        <div class="inner-service custom-six">
+                            <p class="positioned-seven" data-i18n-key="customized-service-seven">Impactor Tests</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="added-value-services">
+            <div class="section-container">
+                <div class="mini-heading-div">
+                    <div class="orange-border"></div>
+                    <h3 class="mini-heading" data-i18n-key="added-value-subtitle">ADDED-VALUE SERVICES</h3>
+                </div>
+                <h2 class="big-heading" data-i18n-key="added-value-heading">Working Together</h2>
+                <p data-i18n-key="added-value-description">A dedicated team of experts for a turnkey service: FE Models,
+                    Crash tests, Analyses and Correlation.The crash test can be based on an internal study provided by
+                    the customer, or we can correlate parametric studies with 3D simulation expertise based on EN16303 /
+                    TR16303 standards.</p>
+            </div>
+        </div>
+
+        <div class="added-value-cards">
+            <div class="section-container">
+                <div class="value-card">
+                    <img src="./images/added-card1.svg" alt="added-card" loading="lazy">
+                    <p data-i18n-key="added-value-option-one">Your Project</p>
+                </div>
+                <div>
+                    <img src="./images/arrow-icon.svg" class="arrow-icon" alt="arrow-icon" loading="lazy">
+                </div>
+                <div class="value-card">
+                    <img src="./images/added-card2.svg" alt="added-card" loading="lazy">
+                    <p data-i18n-key="added-value-option-two">Engineering</p>
+                </div>
+                <div>
+                    <img src="./images/switch-icon.svg" alt="switch-icon" loading="lazy">
+                </div>
+                <div class="value-card">
+                    <img src="./images/added-card3.svg" alt="added-card" loading="lazy">
+                    <p data-i18n-key="added-value-option-three">Virtual Testing</p>
+                </div>
+                <div>
+                    <img src="./images/switch-icon.svg" alt="switch-icon" loading="lazy">
+                </div>
+                <div class="value-card">
+                    <img src="./images/added-card4.svg" alt="added-card" loading="lazy">
+                    <p class="added-real-text" data-i18n-key="added-value-option-four">Real Test</p>
+                </div>
+                <div>
+                    <img src="./images/arrow-icon.svg" class="arrow-icon" alt="arrow-icon" loading="lazy">
+                </div>
+                <div class="last-added-card value-card">
+                    <img src="./images/added-card5.svg" alt="added-card" loading="lazy">
+                    <p class="added-result-text" data-i18n-key="added-value-option-five">Your Result</p>
+                </div>
+                <div>
+                    <img src="./images/switch-icon.svg" alt="switch-icon" loading="lazy" class="dislayed-switch">
+                </div>
+            </div>
+        </div>
+
+        <div class="added-value-background">
+            <img src="./images/added-valuee.png" alt="added-value-background" loading="lazy">
+        </div>
+
+        <div class="about-us">
+            <div class="section-container">
+                <div class="mini-heading-div">
+                    <div class="orange-border"></div>
+                    <h3 class="mini-heading" data-i18n-key="about-subtitle">About Us</h3>
+                </div>
+                <h2 class="big-heading" data-i18n-key="about-heading">Why Choose Us</h2>
+                <p data-i18n-key="about-description">The most comprehensive crash test data for your safety.</p>
+            </div>
+        </div>
+
+        <div class="about-us-cards">
+            <div class="section-container">
+                <div class="about-us-flex">
+                    <div>
+                        <div class="first-left-img-flex">
+                            <img class="position-text first-about" src="./images/aboutus3.png" alt="about-us3"
+                                loading="lazy">
+                            <div class="first-left-content">
+                                <h3 data-i18n-key="about-card-one-heading">International recognition</h3>
+                                <p data-i18n-key="about-card-one-description">Delivering top-level expertise and
+                                    services. </p>
+                            </div>
+                        </div>
+                        <div class="first-right-img-flex">
+                            <img class="position-text first-about" src="./images/aboutus2.png" alt="about-us3"
+                                loading="lazy">
+                            <div class="first-left-content">
+                                <h3 data-i18n-key="about-card-two-heading">Safety &amp; trust</h3>
+                                <p data-i18n-key="about-card-two-description">Risk analysis - Safety briefing -
+                                    Personalized support Private grounds hidden away from public view with security
+                                    gates and almost 30 CCTVs in operation. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="second-left-img-flex">
+                            <img class="position-text first-about" src="./images/aboutus1.png" alt="about-us1"
+                                loading="lazy">
+                            <div class="first-left-content">
+                                <h3 data-i18n-key="about-card-three-heading">New fully connected infrastructures with a
+                                    host of possibilities</h3>
+                                <p data-i18n-key="about-card-three-description">A complete testing service: all types of
+                                    vehicles and road equipment,all weights and speeds. We can customise your tests
+                                    using state-of</p>
+                            </div>
+                        </div>
+                        <div class="second-right-img-flex">
+                            <img class="position-text first-about" src="./images/aboutus4.png" alt="about-us3"
+                                loading="lazy">
+                            <div class="first-left-content">
+                                <h3 data-i18n-key="about-card-four-heading">A true synergy between virtual testing &amp;
+                                    real crash testing</h3>
+                                <p data-i18n-key="about-card-four-description">A customised virtual testing with a wide
+                                    range of simulations for “real” and detailed results. Advanced simulation tools
+                                    meeting the requirements of the EN163030 / TR163030 standards.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="customers">
+            <div class="section-container">
+                <div class="mini-heading-div">
+                    <div class="orange-border"></div>
+                    <h3 class="mini-heading" data-i18n-key="customers-subtitle">Our Customers</h3>
+                </div>
+                <h2 class="big-heading" data-i18n-key="customers-heading">They Trust Us</h2>
+
+
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="./images/sponsors-unique.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsors-unique.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsors-unique.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsors-unique.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsors-unique.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsors-unique.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sponsor3.png" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="testimonial">
+            <div class="section-container">
+                <div class="mini-heading-div">
+                    <div class="orange-border"></div>
+                    <h3 class="mini-heading" data-i18n-key="testimonial-subtitle">Testimonials</h3>
+                </div>
+                <h2 class="big-heading" data-i18n-key="testimonial-heading">Customer Stories</h2>
+            </div>
+        </div>
+
+        <div class="customer-stories">
+            <div class="two-columns">
+                <div class="left-column">
+                    <img src="./images/customer-story.jpg" alt="customer-story" loading="lazy">
+                </div>
+                <div class="right-column customer-stories-right">
+                    <p data-i18n-key="customer-stories-heading">We're proud to be a customer of KSA Crash Lab Their
+                        commitment to safety is second to none. </p>
+                    <p class="mini-orange-subtitle" data-i18n-key="customer-stories-author">- Marwa Mohammed</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="first">
+                <img src="./images/ksaLab-logo.png" alt="brand-logo" loading="lazy">
+            </div>
+            <div class="second">
+                <h5 data-i18n-key="footer-heading-one">Navigation</h5>
+                <a href="index.html">
+                    <p data-i18n-key="footer-description-one">Home</p>
+                </a>
+                <a href="test-center.html">
+                    <p data-i18n-key="footer-description-two">Center</p>
+                </a>
+                <a href="about-us.html">
+                    <p data-i18n-key="footer-description-three">About</p>
+                </a>
+                <a href="blog.html">
+                    <p data-i18n-key="footer-description-four">Blog</p>
+                </a>
+                <a href="contact-us.html">
+                    <p data-i18n-key="footer-description-five">Contact</p>
+                </a>
+            </div>
+
+            <div class="map-footer-container third">
+                <h5 data-i18n-key="footer-heading-two">Maps Location</h5>
+                <div class="responsive-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922967.4531044518!2d37.681910031795695!3d25.359864969593236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bb09a54f5cb5c3%3A0x714ec79fcada102e!2sAl%20Ais%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1710063466688!5m2!1sen!2seg"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <h5 data-i18n-key="footer-heading-three">Follow Us</h5>
+                <div class="follow-icons">
+                    <img src="./images/facebook-icon.png" alt="facebook" loading="lazy">
+                    <img src="./images/twitter-icon.png" alt="twitter" loading="lazy">
+                    <img src="./images/linkedin-icon.png" alt="linkedin" loading="lazy">
+                    <img src="./images/insta-icon.png" alt="insta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tab">
+            <p data-i18n-key="footer-copyrights">© 2024 All rights reserved <span class="tab-span">|</span> Designed and
+                developed by Spatium Software</p>
+        </div>
+    </footer>
+
+    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
+    <script src="sponsors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="slider.js"></script>
+
+
+</body>
+
+</html>

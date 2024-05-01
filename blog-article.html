@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Article</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="./images/ksa-favicon.svg">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="body">
+    <header>
+
+    </header>
+
+    <main>
+        <div id="loader-background">
+            <div id="loader" style="display: none;">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+              </div>
+        </div>
+        <div class="blog-article-container">
+            <div class="section-container">
+                <nav>
+                    <div class="logo-div">
+                        <a href="index.html">
+                            <img src="./images/ksaLab-logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="ul-list">
+                        <ul class="main-navigation-bar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="test-center.html">Center</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a class="active" href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+
+
+
+                            <div class="language-switcher">
+                                <button type="button" class="language-toggle">
+                                  <img src="./images/english.svg" id="main-flag" alt="main-flag">
+                                  <div id="language-toggle-span">English</div>
+                                  <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                </button>
+                                <ul class="language-options">
+                                  <li onclick="change_english()">
+                                    <img id="english-flag" src="./images/english.svg" alt="english-flag" onclick="change_english()">
+                                    <a href="#" onclick="change_english()">English</a>
+                                </li>
+                                  <li onclick="change_arabic()">
+                                    <img id="arabic-flag" src="./images/arabic.svg" alt="arabic-flag" onclick="change_arabic()">
+                                    <a href="#" onclick="change_arabic()">اللغة العربية</a>
+                                </li>
+                                </ul>
+                              </div>
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="nav-btns-w-search">
+                        <div class="contact-w-languages">
+                           
+                            <a href="contact-us.html">
+                                <button type="button" name="mobile-contact-btn">Contact</button>
+                            </a>                        </div>
+
+                        <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                    </div>
+                </nav>
+            </div>
+            <div class="blog-article-background">
+                <h1 class="mini-orange-subtitle" data-i18n-key="blog-article-subtitle">KSA Crash Lab insights </h1>
+                <h1 class="delving-heading" data-i18n-key="blog-article-heading">Delving Deeper <span>into the Future</span> of Mobility</h1>
+                <p data-i18n-key="blog-article-description">Welcome to KSA Crash Lab's Insights Blog - your primary source for the latest trends, innovations, and breakthroughs in vehicle safety and urban mobility. From deep dives into our state-of-the-art testing facilities to thought leadership on tomorrow's transportation landscape, we pave the path to understanding. Journey with us as we navigate the ever-evolving roads of the mobility sector. </p>
+            </div>
+        </div>
+
+
+        <div class="table-of-content">
+            <div class="section-container">
+                <div id="blogy" class="inner-shadowed-table">
+                    <h3 data-i18n-key="table-of-content-main-heading">table of content</h3>
+                    <a href="#article-one">
+                        <h5 data-i18n-key="table-of-content-heading-one">Why they are important and what they tell us?</h5>
+                    </a>
+                    <a href="#article-two">
+                        <h5 data-i18n-key="table-of-content-heading-two">Why are car crash tests important?</h5>
+                    </a>
+                    <a href="#article-three">
+                        <h5 data-i18n-key="table-of-content-heading-three">What do car crash tests tell us?</h5>
+                    </a>
+                    <a href="#article-four">
+                        <h5 data-i18n-key="table-of-content-heading-four">How are car crash tests conducted?</h5>
+                    </a>
+                    <a href="#article-five">
+                        <h5 data-i18n-key="table-of-content-heading-five">How to use car crash test results</h5>
+                    </a>
+                    <a href="#article-six">
+                        <h5 data-i18n-key="table-of-content-heading-six">Conclusion</h5>
+                    </a>
+                </div>
+
+                <div class="inner-table">
+                    <h4 id="article-one" data-i18n-key="table-of-content-heading-two">Why they are important and what they tell us?</h4>
+                    <p data-i18n-key="article-one-description">Car crash tests are a vital part of the automotive industry, helping to ensure that new vehicles are as safe as possible for drivers and passengers. These tests are conducted by independent organizations and government agencies, and they involve crashing vehicles into barriers or other vehicles at various speeds.</p>
+                    <p data-i18n-key="article-one-info">Car crash tests measure a variety of factors, including:</p>
+                    <div class="inner-ul-details">
+                        <ul>
+                            <li data-i18n-key="inner-ul-details-one">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                            <li data-i18n-key="inner-ul-details-two">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                            <li data-i18n-key="inner-ul-details-three">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                        </ul>
+                    </div>
+                    <p data-i18n-key="article-one-conclusion">The results of car crash tests are used to rate vehicles' safety performance. This information is then used by consumers when choosing a new vehicle.</p>
+                </div>
+
+                <div class="inner-table">
+                    <h4 id="article-two" data-i18n-key="table-of-content-heading-three">Why are car crash tests important?</h4>
+                    <p data-i18n-key="article-two-description">Car crash tests are a vital part of the automotive industry, helping to ensure that new vehicles are as safe as possible for drivers and passengers. These tests are conducted by independent organizations and government agencies, and they involve crashing vehicles into barriers or other vehicles at various speeds.</p>
+                </div>
+
+                <div class="inner-table">
+                    <h4 id="article-three" data-i18n-key="table-of-content-heading-four">Why are car crash tests important?</h4>
+                    <p data-i18n-key="article-three-description">Car crash tests are a vital part of the automotive industry, helping to ensure that new vehicles are as safe as possible for drivers and passengers. These tests are conducted by independent organizations and government agencies, and they involve crashing vehicles into barriers or other  vehicles at various speeds.</p>
+                </div>
+
+                <div class="inner-table">
+                    <h4 id="article-four" data-i18n-key="table-of-content-heading-five">How are car crash tests conducted?</h4>
+                    <p data-i18n-key="article-four-description">Car crash tests are a vital part of the automotive industry, helping to ensure that new vehicles are as safe as possible for drivers and passengers. These tests are conducted by independent organizations and government agencies, and they involve crashing vehicles into barriers or other vehicles at various speeds.</p>
+                    <p>Car crash tests measure a variety of factors, including:</p>
+                    <div class="inner-ul-details">
+                        <ul class="inner-ul-details-two">
+                            <li data-i18n-key="inner-ul-details-four">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                            <li data-i18n-key="inner-ul-details-five">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                            <li data-i18n-key="inner-ul-details-six">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                        </ul>
+                    </div>
+                    <p data-i18n-key="article-two-conclusion">The results of car crash tests are used to rate vehicles' safety performance. This information is
+                        then used by consumers when choosing a new vehicle.</p>
+                </div>
+
+                <div class="inner-table">
+                    <h4 id="article-five" data-i18n-key="table-of-content-heading-six">How to use car crash test results</h4>
+                    <p data-i18n-key="article-five-description">Car crash test results can be used by consumers to compare the safety performance of different vehicles. Consumers should look for vehicles that have received high ratings in all areas of crash testing. In addition to looking at car crash test results, consumers should also consider other factors when choosing a safe vehicle, such as the vehicle's size, weight, and performance. Consumers should also make sure that they choose a vehicle that is equipped with all of the latest safety features, such as airbags, seatbelts, and anti-lock brakes.</p>
+                </div>
+
+                <div class="inner-table">
+                    <h4 id="article-six" data-i18n-key="table-of-content-heading-seven">Conclusion</h4>
+                    <p data-i18n-key="article-six-description">Car crash tests are a vital part of the automotive industry, helping to ensure that new vehicles are as safe as possible for drivers and passengers. These tests are conducted by independent organizations and government agencies, and they involve crashing vehicles into barriers or other vehicles at various speeds.</p>
+                    <p data-i18n-key="article-seven-description">Car crash tests are a vital part of the automotive Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi vitae quae ullam ratione enim optio atque veritatis tempore saepe vero quasi magni, adipisci ea quas laudantium. Veniam beatae fuga facere!industry, helping to   ensure that new vehicles are as safe as possible for drivers and passengers. These tests are conducted by independent organizations and government agencies, and they involve crashing vehicles into barriers or other vehicles at various speeds.</p>
+                        <div class="inner-ul-details inner-ul-details-new">
+                            <ul>
+                                <li data-i18n-key="inner-ul-details-seven">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                                <li data-i18n-key="inner-ul-details-eight">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                                <li data-i18n-key="inner-ul-details-nine">Structural integrity: How well the vehicle's body structure holds up in a crash.</li>
+                            </ul>
+                        </div>
+                    <p data-i18n-key="article-three-conclusion">The results of car crash tests are used to rate vehicles' safety performance. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, eos natus placeat a facilis quae dolorum, at corporis iusto sed ratione fugit praesentium necessitatibus, culpa temporibus officia sint vero aut.This information is then used by consumers when choosing a new vehicle.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-article-tab">
+            <div class="section-container">
+                <div class="blog-article-icons">
+                    <img src="./images/blog-article-icons.svg" alt="blog-article-icons">
+                </div>
+                <div class="blog-article-pages">
+                    <a href="another-blog.html#blogy">
+                        <img src="./images/Slider.svg" alt="blog-article-slider">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="first">
+                <img src="./images/ksaLab-logo.png" alt="brand-logo" loading="lazy">
+            </div>
+            <div class="second">
+                <h5 data-i18n-key="footer-heading-one">Navigation</h5>
+                <a href="index.html">
+                    <p data-i18n-key="footer-description-one">Home</p>
+                </a>
+                <a href="test-center.html">
+                    <p data-i18n-key="footer-description-two">Center</p>
+                </a>
+                <a href="about-us.html">
+                    <p data-i18n-key="footer-description-three">About</p>
+                </a>
+                <a href="blog.html">
+                    <p data-i18n-key="footer-description-four">Blog</p>
+                </a>
+                <a href="contact-us.html">
+                    <p data-i18n-key="footer-description-five">Contact</p>
+                </a>
+            </div>
+
+            <div class="map-footer-container third">
+                <h5 data-i18n-key="footer-heading-two">Maps Location</h5>
+                <div class="responsive-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922967.4531044518!2d37.681910031795695!3d25.359864969593236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bb09a54f5cb5c3%3A0x714ec79fcada102e!2sAl%20Ais%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1710063466688!5m2!1sen!2seg"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <h5 data-i18n-key="footer-heading-three">Follow Us</h5>
+                <div class="follow-icons">
+                    <img src="./images/facebook-icon.png" alt="facebook" loading="lazy">
+                    <img src="./images/twitter-icon.png" alt="twitter" loading="lazy">
+                    <img src="./images/linkedin-icon.png" alt="linkedin" loading="lazy">
+                    <img src="./images/insta-icon.png" alt="insta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tab">
+            <p data-i18n-key="footer-copyrights">© 2024 All rights reserved <span class="tab-span">|</span> Designed and
+                developed by Spatium Software</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="lang.js"></script>
+  
+</body>
+
+</html>
