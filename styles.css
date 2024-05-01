@@ -602,7 +602,7 @@ footer {
 
 .accreditiations .two-columns {
     row-gap: 0;
-    /* padding: 0 var(--spacing-lg); */
+    padding: 0 var(--spacing-lg);
 }
 
 .accreditiations .left-column {
@@ -643,7 +643,8 @@ h6 {
 .section-container {
     width: 100%;
     max-width: var(--standard-width);
-    margin: auto
+    margin: auto;
+    padding: 0 var(--spacing-lg);
 }
 
 .about-us,
@@ -825,6 +826,18 @@ h6 {
     
 }
 
+
+.accreditiations .section-container{
+    padding: 0;
+}
+
+.comp-car-frame .section-container{
+    padding: 0;
+}
+
+.customized-services .section-container{
+    padding: 0;
+}
 .contact-black>div:first-of-type,
 img[alt=added-value-background],
 img[alt=biomechanics],
@@ -890,8 +903,7 @@ footer h4 {
 }
 
 .about-us-cards,
-.breakdown,
-footer .section-container {
+.breakdown {
     padding: 0 var(--spacing-xl);
     margin: var(--spacing-xxl) 0;
 }
@@ -7128,6 +7140,9 @@ img[alt="compilance-car"] {
     .contact-center .right-column p{
         font-size: var(--h5-size);
     }
+    .accreditiations .two-columns{
+        padding: 0 var(--spacing-lg);
+    }
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
     .desc-onee {
@@ -7161,6 +7176,9 @@ img[alt="compilance-car"] {
     }
     .contact-center .right-column p{
         font-size: var(--h5-size);
+    }
+    .accreditiations .two-columns{
+        padding: 0 var(--spacing-lg);
     }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
@@ -7196,6 +7214,9 @@ img[alt="compilance-car"] {
     }
     .contact-center .right-column p{
         font-size: var(--h5-size);
+    }
+    .accreditiations .two-columns{
+        padding: 0 var(--spacing-lg);
     }
  
 }
