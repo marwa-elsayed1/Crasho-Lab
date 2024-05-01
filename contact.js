@@ -3,7 +3,7 @@ const form = document.getElementById('contact-form');
 
 
 function emailSend() {
-    fetch("https://54.226.205.131:3000/SendEmail", {
+    fetch("http://ksalab.runasp.net/SendMail", {
         // fetch("http://localhost:3000/sendEmail", {
         // fetch("https://ksa-crashlab-mailer-new-production.up.railway.app/sendEmail", {
 
